@@ -1,192 +1,172 @@
-[
-  {
-    id: 1234,
-    snippet: 'Lorem Ipsum is simply dummy text of ...',
-    internalDate: '2020-03-01T00:08:22.886Z',
-    payload: {
-      headers: {
-        from: {
-          value: 'aaa@example.com',
-        },
-        to: [
-          {
-            value: 'zzz@example.com',
-          },
-        ],
+[{
+  "id": 1234,
+  "snippet": "Lorem Ipsum is simply dummy text of ...",
+  "internalDate": "2020-03-01T00:08:22.886Z",
+  "payload": {
+    "headers": {
+      "from": {
+        "value": "aaa@example.com"
       },
-      subject: '[HR-999] Notice of official announcement',
-      body:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      parts: [
-        {
-          partId: 123,
-          mimeType: 'image/bmp',
-          filename: 'greetings',
-          url: 'http://a.com',
-        },
-      ],
+      "to": [{
+        "value": "zzz@example.com"
+      }]
     },
-  },
-  {
-    id: 3412,
-    snippet: 'printing and typesetting industry...',
-    internalDate: '2020-01-20T00:03:22.886Z',
-    payload: {
-      headers: {
-        from: {
-          value: 'bbb@example.com',
-        },
-        to: [
-          {
-            value: 'xxx@example.com',
-          },
-          {
-            value: 'kkk@example.com',
-          },
-        ],
+    "subject": "[HR-999] Notice of official announcement",
+    "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "parts": [
+      {
+        "partId": 123,
+        "mimeType": "image/bmp",
+        "filename": "greetings",
+        "url": "http://a.com"
+      }
+    ]
+  }
+},
+{
+  "id": 3412,
+  "snippet": "printing and typesetting industry...",
+  "internalDate": "2020-01-20T00:03:22.886Z",
+  "payload": {
+    "headers": {
+      "from": {
+        "value": "bbb@example.com"
       },
-      subject: "[web-333] 'Web Contact'",
-      body:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      parts: [],
-    },
-  },
-  {
-    id: 5566,
-    snippet: "industry's standard dummy text ever...",
-    internalDate: '2019-12-20T00:06:22.886Z',
-    payload: {
-      headers: {
-        from: {
-          value: 'ccc@example.com',
-        },
-        to: [
-          {
-            value: 'yyy@example.com',
-          },
-          {
-            value: 'lll@example.com',
-          },
-          {
-            value: 'eee@example.com',
-          },
-        ],
+      "to": [{
+        "value": "xxx@example.com"
       },
-      subject: 'Happy New Year!! Greetings for the new year.',
-      body:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      parts: [
-        {
-          partId: 123,
-          mimeType: 'image/bmp',
-          filename: 'greetings',
-          url: 'http://a.com',
-        },
-      ],
+      {
+        "value": "kkk@example.com"
+      }]
     },
-  },
-  {
-    id: 7652,
-    snippet: "industry's standard dummy text ever...",
-    internalDate: '2020-03-16T00:08:20.886Z',
-    payload: {
-      headers: {
-        from: {
-          value: 'ccc@example.com',
-        },
-        to: [
-          {
-            value: 'mmm@example.com',
-          },
-          {
-            value: 'lll@example.com',
-          },
-          {
-            value: 'iub@example.com',
-          },
-        ],
+    "subject": "[web-333] 'Web Contact'",
+    "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "parts": [
+    ]
+  }
+},
+{
+  "id": 5566,
+  "snippet": "industry's standard dummy text ever...",
+  "internalDate": "2019-12-20T00:06:22.886Z",
+  "payload": {
+    "headers": {
+      "from": {
+        "value": "ccc@example.com"
       },
-      subject: 'Corona Virus!!',
-      body:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      parts: [
-        {
-          partId: 123,
-          mimeType: 'image/bmp',
-          filename: 'greetings',
-          url: 'http://a.com',
-        },
-      ],
-    },
-  },
-  {
-    id: 4693,
-    snippet: "industry's standard dummy text ever...",
-    internalDate: '2020-03-16T06:03:12.886Z',
-    payload: {
-      headers: {
-        from: {
-          value: 'ccc@example.com',
-        },
-        to: [
-          {
-            value: 'all@example.com',
-          },
-        ],
+      "to": [{
+        "value": "yyy@example.com"
       },
-      subject: "Coronavirus: 'In this current dark reality",
-      body:
-        "No-one anchored in the current dark reality should be thinking that the cancellation of elite sport this past weekend matters much compared to the wider crises at large. Except in a small hidden way we have. Sport can play many roles for us - a thrill, a source of perennial disappointment, a way of working out who we are - but it's often quite sensible things too.",
-      parts: [],
-    },
-  },
-  {
-    id: 1061,
-    snippet: "industry's standard dummy text ever...",
-    internalDate: '2020-03-16T01:05:34.886Z',
-    payload: {
-      headers: {
-        from: {
-          value: 'ccc@example.com',
-        },
-        to: [
-          {
-            value: 'all@example.com',
-          },
-        ],
+      {
+        "value": "lll@example.com"
       },
-      subject: "Sir Mick Jagger 'doing well' after op",
-      body:
-        'Rolling Stone Ronnie Wood says singer Sir Mick Jagger is doing really well as he recovers from a heart operation.The 75-year-old frontman tweeted that he was on the mend earlier this month, after reportedly undergoing heart valve replacement surgery. The band were forced to postpone some North American dates of their No Filter tour while Jagger recovered.',
-      parts: [],
+      {
+        "value": "eee@example.com"
+      }]
     },
-  },
-  {
-    id: 9985,
-    snippet: "industry's standard dummy text ever...",
-    internalDate: '2020-03-16T02:07:22.886Z',
-    payload: {
-      headers: {
-        from: {
-          value: 'abhi@example.com',
-        },
-        to: [
-          {
-            value: 'laura@example.com',
-          },
-        ],
+    "subject": "Happy New Year!! Greetings for the new year.",
+    "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "parts": [
+      {
+        "partId": 123,
+        "mimeType": "image/bmp",
+        "filename": "greetings",
+        "url": "http://a.com"
+      }
+    ]
+  }
+},
+{
+  "id": 7652,
+  "snippet": "industry's standard dummy text ever...",
+  "internalDate": "2020-03-16T00:08:20.886Z",
+  "payload": {
+    "headers": {
+      "from": {
+        "value": "ccc@example.com"
       },
-      subject: 'Coronavirus: Stocks plunge despite global central bank action',
-      body:
-        "London's FTSE 100 share index fell more than 7% in early trade. Earlier, markets in Asia closed sharply lower.",
-      parts: [
-        {
-          partId: 123,
-          mimeType: 'image/bmp',
-          filename: 'greetings',
-          url: 'http://a.com',
-        },
-      ],
+      "to": [{
+        "value": "mmm@example.com"
+      },
+      {
+        "value": "lll@example.com"
+      },
+      {
+        "value": "iub@example.com"
+      }]
     },
-  },
-];
+    "subject": "Corona Virus!!",
+    "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "parts": [
+      {
+        "partId": 123,
+        "mimeType": "image/bmp",
+        "filename": "greetings",
+        "url": "http://a.com"
+      }
+    ]
+  }
+},
+{
+  "id": 4693,
+  "snippet": "industry's standard dummy text ever...",
+  "internalDate": "2020-03-16T06:03:12.886Z",
+  "payload": {
+    "headers": {
+      "from": {
+        "value": "ccc@example.com"
+      },
+      "to": [{
+        "value": "all@example.com"
+      }]
+    },
+    "subject": "Coronavirus: 'In this current dark reality",
+    "body": "No-one anchored in the current dark reality should be thinking that the cancellation of elite sport this past weekend matters much compared to the wider crises at large. Except in a small hidden way we have. Sport can play many roles for us - a thrill, a source of perennial disappointment, a way of working out who we are - but it's often quite sensible things too.",
+    "parts": [
+    ]
+  }
+},
+{
+  "id": 1061,
+  "snippet": "industry's standard dummy text ever...",
+  "internalDate": "2020-03-16T01:05:34.886Z",
+  "payload": {
+    "headers": {
+      "from": {
+        "value": "ccc@example.com"
+      },
+      "to": [{
+        "value": "all@example.com"
+      }]
+    },
+    "subject": "Sir Mick Jagger 'doing well' after op",
+    "body": "Rolling Stone Ronnie Wood says singer Sir Mick Jagger is doing really well as he recovers from a heart operation.The 75-year-old frontman tweeted that he was on the mend earlier this month, after reportedly undergoing heart valve replacement surgery. The band were forced to postpone some North American dates of their No Filter tour while Jagger recovered.",
+    "parts": [
+    ]
+  }
+},
+{
+  "id": 9985,
+  "snippet": "industry's standard dummy text ever...",
+  "internalDate": "2020-03-16T02:07:22.886Z",
+  "payload": {
+    "headers": {
+      "from": {
+        "value": "abhi@example.com"
+      },
+      "to": [{
+        "value": "laura@example.com"
+      }]
+    },
+    "subject": "Coronavirus: Stocks plunge despite global central bank action",
+    "body": "London's FTSE 100 share index fell more than 7% in early trade. Earlier, markets in Asia closed sharply lower.",
+    "parts": [
+      {
+        "partId": 123,
+        "mimeType": "image/bmp",
+        "filename": "greetings",
+        "url": "http://a.com"
+      }
+    ]
+  }
+}]
