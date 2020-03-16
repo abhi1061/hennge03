@@ -63,6 +63,9 @@ class index extends Component {
     return moment(date).format('YY/MM/DD');
   };
   setSelectedEmail = id => {
+    if (this.props.selectedIds.indexOf(id) !== -1) {
+      return;
+    }
     this.props.setSelectedEmail(id);
   };
   setDialogClose = () => {
