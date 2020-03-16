@@ -1,4 +1,9 @@
-.calender-icon, .search-icon {
+.calender-icon {
     height: 1em;
     width: 1em;
+}
+
+.search-icon {
+    height: .8em;
+    width: .8em;
 }
