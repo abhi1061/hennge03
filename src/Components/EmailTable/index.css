@@ -126,6 +126,9 @@ body {
   .thFrom,.thTo,.thSubject {
     border-right: 1px solid gray;
   }
+  .thTo {
+    padding-left: .6em;
+  }
   #rightIcon {
     display: inline-block;
   }
