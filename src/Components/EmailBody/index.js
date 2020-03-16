@@ -1,14 +1,17 @@
 import React from 'react';
+import moment from 'moment-timezone';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import Dialog from '@material-ui/core/Dialog';
-import Paper from '@material-ui/core/Paper';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
+import CloseIcon from '@material-ui/icons/Close';
+import Dialog from '@material-ui/core/Dialog';
+import Divider from '@material-ui/core/Divider';
+import GetAppIcon from '@material-ui/icons/GetApp';
+import List from '@material-ui/core/List';
+import Paper from '@material-ui/core/Paper';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 
 const useStyles = makeStyles(theme => ({
@@ -54,6 +57,9 @@ export default function FullScreenDialog(props) {
         <div>
           <Paper className={classes.root}>
             <Typography variant="subtitle2" gutterBottom>
+              {moment(data.date).format('YYYY/MM/DD HH:MM:ss')}
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
               {data.from}
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
@@ -69,6 +75,16 @@ export default function FullScreenDialog(props) {
             <Typography variant="body2" gutterBottom>
               {data.body}
             </Typography>
+            {data.attached.length ? (
+              <Button
+                size="small"
+                variant="outlined"
+                className="mb-1"
+                endIcon={<GetAppIcon />}
+              >
+                {data.attached[0].filename}
+              </Button>
+            ) : null}
           </Paper>
           <Divider />
         </div>

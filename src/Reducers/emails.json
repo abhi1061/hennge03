@@ -17,7 +17,7 @@
       {
         "partId": 123,
         "mimeType": "image/bmp",
-        "filename": "greetings",
+        "filename": "rules.bmp",
         "url": "http://a.com"
       }
     ]
@@ -69,8 +69,8 @@
     "parts": [
       {
         "partId": 123,
-        "mimeType": "image/bmp",
-        "filename": "greetings",
+        "mimeType": "image/jpeg",
+        "filename": "error.jpeg",
         "url": "http://a.com"
       }
     ]
@@ -100,8 +100,8 @@
     "parts": [
       {
         "partId": 123,
-        "mimeType": "image/bmp",
-        "filename": "greetings",
+        "mimeType": "image/zip",
+        "filename": "files.zip",
         "url": "http://a.com"
       }
     ]
@@ -163,8 +163,8 @@
     "parts": [
       {
         "partId": 123,
-        "mimeType": "image/bmp",
-        "filename": "greetings",
+        "mimeType": "image/jpg",
+        "filename": "bbc.jpeg",
         "url": "http://a.com"
       }
     ]

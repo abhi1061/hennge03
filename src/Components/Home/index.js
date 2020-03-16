@@ -48,6 +48,7 @@ class index extends Component {
         subject: row.payload.subject,
         body: row.payload.body,
         attachment: row.payload.parts.length > 0 ? true : false,
+        attached: row.payload.parts,
         date: row.internalDate,
         formatDate: this.getDateFormatted(row.internalDate),
       };
