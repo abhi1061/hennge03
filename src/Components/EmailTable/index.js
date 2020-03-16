@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { sort, getComparator } from '../../Utils/Comparator';
+import EmptyTable from '../EmptyEmails';
 import Body from './Body';
 import Header from './Header';
 import './index.css';
@@ -18,6 +19,28 @@ export default class index extends Component {
     const isAsc = this.state.orderBy === property && this.state.order === 'asc';
     this.setState({ order: isAsc ? 'desc' : 'asc' });
     this.setState({ orderBy: property });
+  };
+
+  renderEmailTable = (headCells, data, setSelected, selectedIds) => {
+    return (
+      <div>
+        <Header
+          order={this.state.order}
+          orderBy={this.state.orderBy}
+          headCells={headCells}
+          onRequestSort={this.handleRequestSort}
+        />
+        <Body
+          order={this.state.order}
+          orderBy={this.state.orderBy}
+          data={data}
+          comparator={getComparator}
+          sort={sort}
+          setSelected={setSelected}
+          selectedIds={selectedIds}
+        />
+      </div>
+    );
   };
 
   render() {
@@ -41,22 +64,11 @@ export default class index extends Component {
             </span>
           ) : null}
         </div>
-
-        <Header
-          order={this.state.order}
-          orderBy={this.state.orderBy}
-          headCells={headCells}
-          onRequestSort={this.handleRequestSort}
-        />
-        <Body
-          order={this.state.order}
-          orderBy={this.state.orderBy}
-          data={data}
-          comparator={getComparator}
-          sort={sort}
-          setSelected={setSelected}
-          selectedIds={selectedIds}
-        />
+        {data.length ? (
+          this.renderEmailTable(headCells, data, setSelected, selectedIds)
+        ) : (
+          <EmptyTable />
+        )}
       </div>
     );
   }

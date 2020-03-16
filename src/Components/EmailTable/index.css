@@ -14,7 +14,6 @@ body {
 .grid-header {
   background-color: #F5F5F5;
   padding: 1em;
-  border-top: 1px solid #ddd;
 }
 
 .grid-header > div {
@@ -66,7 +65,12 @@ body {
 .resultContainer {
   display: flex;
   justify-content: space-between;
-  margin: .5em 0;
+  margin: .5em 0 0;
+  border-bottom: 1px solid #ddd;
+}
+.sp-icon {
+  height: 36px;
+  width: 36px;
 }
 
 .isSelected {

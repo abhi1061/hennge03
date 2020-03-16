@@ -86,21 +86,23 @@ class index extends Component {
   render() {
     return (
       <div>
-        <DatePicker
-          startDate={this.state.startDate}
-          endDate={this.state.endDate}
-          setDates={this.setDatesFromCalender}
-          search={this.onSearch}
-        />
-        <EmailsTable
-          data={this.createData(this.props.data)}
-          headCells={this.props.headCells}
-          setSelected={this.setSelectedEmail}
-          selectedIds={this.props.selectedIds}
-          order="desc"
-          orderBy="date"
-          openDialog={this.setDialogOpen}
-        />
+        <div>
+          <DatePicker
+            startDate={this.state.startDate}
+            endDate={this.state.endDate}
+            setDates={this.setDatesFromCalender}
+            search={this.onSearch}
+          />
+          <EmailsTable
+            data={this.createData(this.props.data)}
+            headCells={this.props.headCells}
+            setSelected={this.setSelectedEmail}
+            selectedIds={this.props.selectedIds}
+            order="desc"
+            orderBy="date"
+            openDialog={this.setDialogOpen}
+          />
+        </div>
         {this.renderEmailBody()}
       </div>
     );
