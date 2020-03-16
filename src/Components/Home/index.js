@@ -15,7 +15,7 @@ import EmailBody from '../EmailBody';
 
 class index extends Component {
   state = {
-    startDate: moment().startOf('day'),
+    startDate: moment().startOf('year'),
     endDate: moment().endOf('day'),
     openBodyDialog: false,
   };

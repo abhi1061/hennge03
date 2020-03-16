@@ -1,4 +1,4 @@
-## Project
+# `Project`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -34,6 +34,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Technology
 
 These are the technology ans steps I used in order to copleate this challenge,
+
+### `SPA`
+
+I used a single page application for email list and detail page.
+No routing is used for navigation between pages.
+All the states used are preserved in either reducer or component lavel state.
 
 ### `redux-thunk`
 
