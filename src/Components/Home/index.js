@@ -7,6 +7,7 @@ import {
   getEmailsByDateRange,
   setSelectedEmail,
   setDialogClose,
+  setDialogOpen,
 } from '../../Actions';
 import DatePicker from '../DatePicker';
 import EmailsTable from '../EmailTable';
@@ -67,6 +68,9 @@ class index extends Component {
   setDialogClose = () => {
     this.props.setDialogClose();
   };
+  setDialogOpen = () => {
+    this.props.setDialogOpen();
+  };
   renderEmailBody = () => {
     return (
       <EmailBody
@@ -89,8 +93,10 @@ class index extends Component {
           data={this.createData(this.props.data)}
           headCells={this.props.headCells}
           setSelected={this.setSelectedEmail}
+          selectedIds={this.props.selectedIds}
           order="desc"
           orderBy="date"
+          openDialog={this.setDialogOpen}
         />
         {this.renderEmailBody()}
       </div>
@@ -111,6 +117,7 @@ const mapStateToProps = state => {
     data: state.email.data,
     headCells: headCells,
     selectedEmails: state.email.selected,
+    selectedIds: state.email.selectedIds,
     openDialog: state.email.openBodyDialog,
   };
 };
@@ -118,5 +125,6 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps, {
   getEmailsByDateRange,
   setDialogClose,
+  setDialogOpen,
   setSelectedEmail,
 })(index);

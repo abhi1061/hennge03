@@ -4,19 +4,34 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import './index.css';
 
 export default function Body(props) {
-  const { data, comparator, order, orderBy, sort, setSelected } = props;
+  const {
+    data,
+    comparator,
+    order,
+    orderBy,
+    sort,
+    setSelected,
+    selectedIds,
+  } = props;
+
   const renderTextClass = key => {
     let className = key === orderBy ? 'text-dark' : '';
     return className;
   };
 
+  const renderSelectedClass = id => {
+    if (selectedIds.length && selectedIds.find(row => row === id)) {
+      return 'isSelected';
+    }
+  };
+
   return sort(data, comparator(order, orderBy)).map((row, index) => {
     return (
       <div
-        className={`grid-container`}
+        className={`grid-container ${renderSelectedClass(row.id)}`}
         key={row.id}
         onClick={() => {
-          setTimeout(() => setSelected(row.id), 1500);
+          setSelected(row.id);
         }}
       >
         <div className="row">

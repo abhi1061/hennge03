@@ -21,13 +21,25 @@ export default class index extends Component {
   };
 
   render() {
-    const { data, headCells, setSelected } = this.props;
+    const {
+      data,
+      headCells,
+      setSelected,
+      selectedIds,
+      openDialog,
+    } = this.props;
     return (
       <div>
         <div className="resultContainer">
           <span className="result">
             Results: <span className="resultCount">{data.length}</span> mail(s)
           </span>
+          {selectedIds.length ? (
+            <span className="result details" onClick={() => openDialog()}>
+              Details:
+              <span className="resultCount">{selectedIds.length}</span> mail(s)
+            </span>
+          ) : null}
         </div>
 
         <Header
@@ -43,6 +55,7 @@ export default class index extends Component {
           comparator={getComparator}
           sort={sort}
           setSelected={setSelected}
+          selectedIds={selectedIds}
         />
       </div>
     );

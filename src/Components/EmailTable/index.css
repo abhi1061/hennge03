@@ -60,12 +60,18 @@ body {
   font-size: 12pt;
   color: #747474;
 }
+.details {
+  cursor: pointer;
+}
 .resultContainer {
+  display: flex;
+  justify-content: space-between;
   margin: .5em 0;
 }
 
 .isSelected {
-  background-color: #747477;
+  background-color: #F5F5F5;
+  font-style: italic;
 }
 
 @media (max-width: 600px) {

@@ -1,4 +1,9 @@
-import { GET_EMAILS, SET_SELECTED_EMAIL, SET_DIALOG_CLOSE } from './types';
+import {
+  GET_EMAILS,
+  SET_SELECTED_EMAIL,
+  SET_DIALOG_CLOSE,
+  SET_DIALOG_OPEN,
+} from './types';
 
 export const getEmailsByDateRange = (startDate, endDate) => dispatch => {
   dispatch({
@@ -13,4 +18,8 @@ export const setSelectedEmail = id => dispatch => {
 
 export const setDialogClose = () => dispatch => {
   dispatch({ type: SET_DIALOG_CLOSE, payload: null });
+};
+
+export const setDialogOpen = () => dispatch => {
+  dispatch({ type: SET_DIALOG_OPEN, payload: null });
 };

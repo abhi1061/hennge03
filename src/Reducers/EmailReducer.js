@@ -5,12 +5,14 @@ import {
   GET_EMAILS,
   SET_SELECTED_EMAIL,
   SET_DIALOG_CLOSE,
+  SET_DIALOG_OPEN,
 } from '../Actions/types';
 
 const INITIAL_STATE = {
   emails: emailData,
   data: [],
   selected: [],
+  selectedIds: [],
   openBodyDialog: false,
 };
 
@@ -21,6 +23,7 @@ export default (state = INITIAL_STATE, action) => {
         ...state,
         data: filterDataByDateRange(state.emails, action.payload),
         selected: [],
+        selectedIds: [],
       };
     case SET_SELECTED_EMAIL:
       return {
@@ -29,14 +32,17 @@ export default (state = INITIAL_STATE, action) => {
           ...state.selected,
           findtDataById(state.emails, action.payload),
         ],
-        openBodyDialog: true,
+        selectedIds: [...state.selectedIds, action.payload],
       };
     case SET_DIALOG_CLOSE:
       return {
         ...state,
         selected: [],
+        selectedIds: [],
         openBodyDialog: false,
       };
+    case SET_DIALOG_OPEN:
+      return { ...state, openBodyDialog: true };
     default:
       return state;
   }
