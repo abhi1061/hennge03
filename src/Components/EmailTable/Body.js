@@ -42,7 +42,7 @@ export default function Body(props) {
           <div className={`tdTo ${renderTextClass('to')}`}>
             {row.to[0].value} {row.additionalReceivers ? ', ...  ' : null}{' '}
             {row.additionalReceivers ? (
-              <span className="badge badge-secondary ml-3">
+              <span className="badge badge-secondary float-right">
                 +{row.additionalReceivers}
               </span>
             ) : null}

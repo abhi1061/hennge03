@@ -5,7 +5,7 @@ body {
 .grid-container, .grid-header {
   display: grid;
   margin: auto;
-  grid-template-columns: 1fr 2fr 4fr 15px .8fr;
+  grid-template-columns: 1.5fr 2fr 5fr 15px .8fr;
   grid-gap: 1em;
   padding: 1em;
   border-bottom: 1px solid #ddd;
@@ -73,6 +73,10 @@ body {
   width: 36px;
 }
 
+.tdTo {
+  padding-right: 3em;
+}
+
 .isSelected {
   background-color: #F5F5F5;
   font-style: italic;
@@ -102,6 +106,7 @@ body {
   }
   .tdTo {
     grid-area: 2 / 2 / 3 / 6;
+    padding-right: .5em;
   }
   .tdSubject {
     grid-area: 3 / 1 / 4 / 6;
