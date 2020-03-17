@@ -15,4 +15,4 @@ A tool tip could be added to to `+number` badge to have better visibility of the
 
 Instead of having only time based search there could be search based on other visible columns..
 
-`Grid filter` like `carrots` on the header can be also used for sorting data based on various combination and operators.
+`Grid filter` like `carrots` on the header can be also used for sorting data based on various combination of operators.
